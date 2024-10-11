@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2-Player Trivia Game</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Two-Player Trivia Battle Game</h1>
+    <div id="player-setup">
+      <input type="text" id="player-1" placeholder="Player-1 Enter Your Name" />
+      <input type="text" id="player-2" placeholder="Player-2 Enter Your Name" />
+      <button type="button" onclick="startTheGame()">Start Game</button>
+    </div>
+    <div id="category-selection" style="display: none">
+      <select id="category-select">
+        <option value="">Select a category</option>
+      </select>
+      <button type="button" onclick="fetchQuestions()">Fetch Questions</button>
+    </div>
+    <div id="questions-container" style="display: none"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
