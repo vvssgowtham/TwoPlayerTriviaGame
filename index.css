@@ -31,12 +31,13 @@ button {
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  margin-top: 15px;
+  margin: 15px;
   cursor: pointer;
   background-color: #28a745;
   color: white;
   font-size: 16px;
   transition: background-color 0.3s ease;
+
 }
 
 button:hover {
