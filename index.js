@@ -35,7 +35,8 @@ const fetchCategories = async () => {
     categories.sort();
     sessionStorage.setItem("categories", JSON.stringify(categories));
   } catch (error) {
-    console.log(error);
+    alert("Failed to fetch categories. Please try again later.");
+    throw new Error("Failed to fetch categories: " + error.message);
   }
   iteratingCategories();
   document.getElementById("category-selection").style.display = "block";
